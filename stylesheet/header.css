@@ -1,0 +1,32 @@
+/* #dfe4e7 */
+/* .logoAndTitle{
+    
+} */
+.logo{
+    font-weight: 1000;
+    margin-left: 2rem;
+    width: 10rem;
+    height: 7rem;
+}
+.navigation{
+    display: flex;
+    position: sticky;
+    justify-content: space-evenly;
+    gap: 10rem;
+    font-size: 2rem;
+    list-style: none;
+    padding-top: 1rem;
+}
+.sign__In{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    margin-top: .7rem;
+    outline: none;
+    border: 1px solid black;
+    background-color: #dfe4e7;
+    transition: 1s ease;
+}
+.sign__In:hover{
+    background-color: #fff;
+}

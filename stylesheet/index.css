@@ -1,0 +1,25 @@
+
+:root{
+    --main-color:#dfe4e7;
+    --primary-color:#fff;
+    --secondary-color:#01a550;
+    --color-black:black;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body{
+    background-color: var(--main-color);
+}
+html{
+    font-size: 62.5%;
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 5rem 0 5rem;
+ border-bottom: 1px solid var(--primary-color);
+}
