@@ -22,4 +22,20 @@ html{
   justify-content: space-between;
   margin: 3rem 5rem 0 5rem;
  border-bottom: 1px solid var(--primary-color);
+ transition: 1s;
+}
+.sticky{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    z-index: 1;
+}
+.translate{
+    transition: transform 1s, opacity 1s;
+}
+.transitionY{
+    opacity: 0;
+    transform: translateY(8rem);
 }

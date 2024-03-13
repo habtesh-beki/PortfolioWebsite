@@ -11,27 +11,25 @@
     <title>RealState Portfolio</title>
 </head>
 <body>
-    <header class="header__part">
-        <div class="header__container">
-            <div class="logoAndTitle"><img src="img/noah1.png" alt="" class="logo"></div>
-            <nav class="navigation__bar">
+     <header class="header__part">
+        <div class="header__container ">
+            
+             <img src="img/noah1.png" alt="" class="logo">
                 <ul class="navigation">
-                    <li class="navigation__list">Investement Potential</li>
-                    <li class="navigation__list">Location</li>
-                    <li class="navigation__list">About Company</li>
-                    <li class="navigation__list">Contact</li>
+                    <li class="navigation__list"><a class="nav__link"  href="#section-1">Investement Potential</a></li>
+                    <li class="navigation__list"><a class="nav__link" href="#section-2">Noah Gallary</a></li>
+                    <li class="navigation__list"><a class="nav__link" href="#section-3">About Company</a></li>
+                    <li class="navigation__list"><a class="nav__link" href="#section-4">Contact</a></li>
                 </ul>
-            </nav>
-            <button class="sign__In">Sign in</button>
+            <button class="sign__In signup">Sign up</button>
         </div>
-    </header>
-    <main class="main__website">
-        <div class="Investment__potential">
-            <div class="Investment__potential--header">
+   
+       <!-- <main class="main__website"> -->
+        <div class="Investment__potential" id="section-1">
+            <div class="Investment__potential--header" >
                 <P class="Investment_potential-title">Investement Potential</P>
                 <div class="WightAndBlack">
                     <i class="fa-regular fa-moon dark"></i>
-                    <!-- <i class="fa-solid fa-moon"></i> -->
                 </div>
             </div>
             <div class="Investment__content">
@@ -53,13 +51,15 @@
             </div>  
          </div>
          <div class="scrollDown">Scroll down <i class="fa-solid fa-arrow-down"></i></div>
-         <div class="discription__content">
+        </header>
+         <div class="discription__content translate">
+          <div class="sictionDivide" id="section"></div>
             <p class="discription__title">The Property that <br> suits you perfectly </p>
             <p class="discription__main--content">Choose an appartment that suits your requirement and financial capabilites. Attractive location close to business center provides guaranted rental.  </p>
          </div>
 
          <div class="all__noah--gallary">
-         <div class="noah__gallary">
+         <div class="noah__gallary" id="section-2">
           <div class="Noah__gallary--title">Noah Gallary</div>
           <p class="how__many--image"><i class="fa-solid fa-arrow-left"></i>  01 / 10  <i class="fa-solid fa-arrow-right"></i></p>
          </div>
@@ -72,10 +72,12 @@
          </div>
         </div>
         <div class="our__mission">
+          <div class="translate">
             <p class="mission--title">Our mission</p>
             <p class="mission--content">creating alternative investment opportunites. providing a stabilizing <br> component to portfolios, combining low risk profiles  with a value-add <br> approach to yield attractive returns </p>
-        </div>
-           <div class="trusted__client">
+          </div>
+          </div>
+           <div class="trusted__client" id="section-3">
             <p class="trusted_by--cliantes">Trusted by Clients</p>
             </div>
             <div class="slider">
@@ -93,7 +95,7 @@
                     <address class="testimonial__author">
                       <img src="img/person/person-1.jpg" alt="" class="testimonial__photo" />
                       <h6 class="testimonial__name">Aarav Lynn</h6>
-                      <p class="testimonial__location">San Francisco, USA</p>
+                      <p class="testimonial__location">Addis Abeba, Ethiopia</p>
                     </address>
                   </div>
                 </div>
@@ -113,7 +115,7 @@
                     <address class="testimonial__author">
                       <img src="img/person/person-2.webp" alt="" class="testimonial__photo" />
                       <h6 class="testimonial__name">Miyah Miles</h6>
-                      <p class="testimonial__location">London, UK</p>
+                      <p class="testimonial__location">Bahirdar, Ethiopia</p>
                     </address>
                   </div>
                 </div>
@@ -134,7 +136,7 @@
                     <address class="testimonial__author">
                       <img src="img/person/person-3.jpg" alt="" class="testimonial__photo" />
                       <h6 class="testimonial__name">Francisco Gomes</h6>
-                      <p class="testimonial__location">Lisbon, Portugal</p>
+                      <p class="testimonial__location">Mekele, Ethiopia</p>
                     </address>
                   </div>
                 </div>
@@ -143,9 +145,9 @@
                 <button class="slider__btn slider__btn--right">&rarr;</button>
                 <div class="dots"></div>
               </div>
-     <div class="news">
+     <div class="news translate">
         <div class="actual_news--title">Actual News</div>
-        <div class="container__news">
+        <div class="container__news ">
             <div class="news__first--row">
             <div class="news__items">
                 <img src="img/news/news1.jfif" alt="" class="img__news">
@@ -173,25 +175,76 @@
         </div>
      </div>
      <div class="unique__Investement--opp">
-        <div class="unique__invest--title">The unique Investment opportunity</div>
-        <article class="unique__invest--component">
-            <div class="privet__invest">
-                <span>private invester</span>
+        <div class="unique__invest--title">The unique Investment <br> opportunity</div>
+        <article class="unique__invest--component translate">
+            <div class=" card privet__invest">
+                <i class="fa-solid fa-seedling card-pic"></i>
+                <h3>private invester</h3>
                 <p class="unique__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur veniam omnis illo in ipsa fugiat praesentium modi, numquam itaque! </p>
+                <a href="">View More</a>
             </div>
-            <div class="aligned__interest">
-                <span>aligned Interest</span>
-                <p class="unique__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere architecto est? Accusantium, soluta! Eos doloremque tenetur nulla dolorem eum? </p>
+            <div class="card aligned__interest">
+              <i class="fa-regular fa-map card-pic"></i>
+               <h3>aligned Interest</h3>
+                <p class="unique__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere architecto est? Accusantium, soluta! Eos doloremque tenetur nulla dolorem </p>
+                <a href="">View More</a>
             </div>
-            <div class="spread__the--risk">
-                <span>spread the Risks</span>
-                <p class="unique__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio maiores neque voluptates omnis reiciendis esse debitis delectus minus dolor perspiciatis? </p>
+            <div class="card spread__the--risk">
+                <i class="fa-solid fa-umbrella card-pic"></i>
+                <h3>spread the Risks</h3>
+                <p class="unique__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio maiores neque voluptates omnis reiciendis esse debitis delectus minus dolor  </p>
+                <a href="">View More</a>
             </div>
         </article>
      </div>
-    </main>
-    <footer class="footer__website">
-
+     <div class="learn__more--noah">
+      <div class="translate">
+      <p class="learn__more--text">Learn more about <br>investing with Noah</p>
+      <div class="Email__Signin">
+       <input type="email" name="" id="" placeholder="Enter your email" class="input__email">
+       <button class="signup__about signup">Sign up</button>
+      </div>
+     </div>
+     </div>
+    <!-- </main> -->
+    <footer class="footer__website" id="section-4">
+      <div class="all__footer--contenet">
+        <div class="logoAndList">
+          <div class="noahReal__estate">Noah Real estate</div>
+          <div class="all__footer--list">
+            <li class="footerList"><a href="">product</a></li>
+            <li class="footerList"><a href="">Install</a></li>
+            <li class="footerList"><a href="">Quickstart</a></li>
+            <li class="footerList"><a href="">Blog</a></li>
+            <li class="footerList"><a href="">carrers</a></li>
+            <li class="footerList"><a href="">About</a></li>
+          </div>
+          <div class="contact__methods">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="copyright"><i class="fa-regular fa-copyright"></i> Habtemriam Bereket</div>
+      </div>
     </footer>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your Noah account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
 </body>
 </html>

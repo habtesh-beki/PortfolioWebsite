@@ -27,6 +27,11 @@
     background-color: #dfe4e7;
     transition: 1s ease;
 }
+.navigation__list a{
+    outline: none;
+    text-decoration: none;
+    color: var(--color-black);
+}
 .sign__In:hover{
     background-color: #fff;
 }
