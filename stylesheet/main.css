@@ -73,7 +73,9 @@
     font-size: 3rem;
 }
 .all__noah--gallary{
-    height: 70vh;
+    /* height: 70vh; */
+    height: auto;
+    margin-bottom: 2rem;
 }
 .noah__gallary{
     display: flex;
@@ -323,7 +325,8 @@
     color: var(--secondary-color);
 }
 .unique__Investement--opp{
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     width: 100rem;
     padding-top: 20%;
     margin: 0 auto;
