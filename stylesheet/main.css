@@ -4,14 +4,18 @@
     justify-content: space-between;
     font-size: 2.5rem;
     padding: 3rem 10rem;
+    color: var(--color-black);
 }
  .dark{
     font-size: 4rem;
+    cursor: pointer;
+    color: var(--color-black);
 }  
 .Investment__content{
     margin-left: 10rem;
     height: 75vh;
     display: flex;
+    color: var(--color-black);
 }
 .main--content{
     width: 40%;
@@ -48,21 +52,24 @@
 }
 .slice__image{
     height: 70%;
-    width: 15rem;
+    width: 13rem;
     border-radius: 1rem;
     object-fit: cover;
+    transition: transform 1s ease-in-out;
 }
 .scrollDown{
     margin-left: 10rem;
     font-size: 2rem;
     cursor: pointer;
     margin-top: -5rem;
+    color: var(--color-black);
 }
 .discription__content{
     margin-top: 15rem;
     margin-left: 30%;
     width: 40%;
     height: 60vh;
+    color: var(--color-black);
 }
 .discription__title{
     font-size: 5rem;
@@ -75,14 +82,26 @@
 .all__noah--gallary{
     /* height: 70vh; */
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
+.arrow__img{
+    border: none;
+    outline: none;
+   margin-left: 2rem;
+    background-color: transparent;
+  cursor: pointer;
+  font-size: 3rem;
+  color: var(--color-black);
+
+}
+
 .noah__gallary{
     display: flex;
      margin-left: 30%;
      justify-content: space-between;
      width: 40%;
      margin-bottom: 4rem;
+     color: var(--color-black);
 }
 .sictionDivide{
     width: 100%;
@@ -104,6 +123,7 @@
     margin: 0 auto;
     gap: 3rem;
     overflow: hidden;
+    
 }
 .album > img{
     position: absolute;
@@ -124,7 +144,7 @@
     background-image: url(../img/imgmis.jfif);
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--primary-color);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,6 +162,7 @@
 .trusted__client{
   margin-top: 15rem;
   margin-left: 45rem;
+  color: var(--color-black);
 }
 .trusted_by--cliantes{
     font-size: 4rem;
@@ -163,6 +184,7 @@
     justify-content: center;
     align-items: center;
     transition: transform 1s;
+    color: var(--color-black);
 }
 .slide > img {
     /* Only for images that have different size than slide */
@@ -175,9 +197,9 @@
     top: 50%;
     z-index: 10;
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: var(--main-color);
     font-family: inherit;
-    color: #333;
+    color: var(--color-black);
     border-radius: 50%;
     height: 5.5rem;
     width: 5.5rem;
@@ -247,7 +269,7 @@
   .testimonial__text {
     font-size: 1.7rem;
     margin-bottom: 3.5rem;
-    color: #666;
+    color: var(--testimonial-color);
   }
   
   .testimonial__author {
@@ -282,6 +304,7 @@
     width: 70rem;
     height: 110vh;
     margin: 0 auto;
+    color: var(--color-black);
     
 }
 .actual_news--title{
@@ -331,6 +354,7 @@
     width: 100rem;
     padding-top: 20%;
     margin: 0 auto;
+    color: var(--color-black);
 }
 .unique__invest--title{
     display: flex;
@@ -383,7 +407,7 @@
 .learn__more--text{
     font-size: 4.5rem;
     font-weight: 500;
-    color: var(--primary-color);
+    color: #fff;
     margin-bottom: 2rem;
 }
 .Email__Signin input{
@@ -405,3 +429,5 @@
     color: var(--primary-color);
     font-size: 2rem;
 }
+
+

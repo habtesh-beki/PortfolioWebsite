@@ -111,3 +111,147 @@ translateAbove.forEach(cont => {
 })
 
 //////transition of the trusted client atricls
+
+
+const slides = document.querySelectorAll('.slide')
+const btnLeft = document.querySelector('.slider__btn--left')
+const btnRight = document.querySelector('.slider__btn--right')
+
+let lenghtSlide = slides.length;
+let currentSlide = 0;
+
+const goToSlide = function(slide){
+    // e.preventDefault();
+   slides.forEach((s,i) => {
+    s.style.transform = `translateX(${ (i- slide) * 100}%)`;
+   })
+}
+
+const ScrollLeft = function(e){
+    if(currentSlide === 0){
+        currentSlide = lenghtSlide - 1;
+    }
+    else currentSlide--
+
+    goToSlide(currentSlide);
+}
+const ScrollRight = function(e){
+    if(currentSlide === lenghtSlide - 1){
+        currentSlide = 0;
+    }
+    else currentSlide++
+
+    goToSlide(currentSlide);
+}
+
+const init = function(e){
+  goToSlide(0)
+}
+init();
+
+btnLeft.addEventListener('click', ScrollLeft)
+btnRight.addEventListener('click',ScrollRight)
+
+////noah gallary slider 
+
+const gallery = document.querySelectorAll('.noah__image');
+const galleryTitle = document.querySelector('.Noah__gallary--title');
+const galleryArrowLeft = document.querySelector('.arrow__left');
+const galleryArrowRight = document.querySelector('.arrow__Right');
+const imageCountContainer = galleryArrowRight.parentElement;
+
+
+let pictureCurrent = 0;
+const pictureLength = gallery.length;
+
+
+const imageCurrentSpan = document.createElement('span');
+imageCurrentSpan.classList.add('image__current');
+imageCountContainer.insertBefore(imageCurrentSpan , galleryArrowRight)
+// galleryArrowLeft.insertAdjacentElement('afterbegin', imageCurrentSpan);
+
+
+const updateImageCount = function() {
+    imageCurrentSpan.textContent = `${pictureCurrent + 1} / ${pictureLength}`;
+};
+
+const goToPicture = function(picture) {
+    gallery.forEach((g, i) => {
+        g.style.transform = `translateX(${(i - picture) * 100}%)`;
+    });
+};
+
+const goToLeft = function() {
+    if (pictureCurrent === 0) {
+        pictureCurrent = pictureLength - 1;
+    } else {
+        pictureCurrent--;
+    }
+    goToPicture(pictureCurrent);
+    updateImageCount(); 
+};
+
+const goToRight = function() {
+    if (pictureCurrent === pictureLength - 1) {
+        pictureCurrent = 0;
+    } else {
+        pictureCurrent++;
+    }
+    goToPicture(pictureCurrent);
+    updateImageCount(); 
+};
+
+const initPicture = function() {
+    goToPicture(0);
+    updateImageCount(); 
+};
+
+galleryArrowLeft.addEventListener('click', goToLeft);
+galleryArrowRight.addEventListener('click', goToRight);
+
+initPicture();
+
+
+///dark mode 
+
+const dark = document.querySelector('.dark')
+
+
+// const darkMode = function(){
+//     const root = document.documentElement;
+
+//     root.style.setProperty('--main-color' , '#232a36');
+//     root.style.setProperty('--primary-color'  , '#000205');
+//     root.style.setProperty('--secondary-color' , '#01a550');
+//     root.style.setProperty('--color-black' , '#fff');
+//     console.log('success')
+// }
+
+const darkMode = function(){
+    const root = document.documentElement;
+    const darkmode = root.classList.contains('darkmode')
+    if(darkmode){
+        root.classList.remove('darkmode')
+        dark.classList.remove('fa-moon')
+        dark.classList.add('fa-sun')
+    }
+    else {
+        root.classList.add('darkmode')
+        dark.classList.add('fa-moon')
+        dark.classList.remove('fa-sun')
+    }
+}
+
+dark.addEventListener('click', darkMode)
+
+
+
+
+
+
+
+
+
+
+
+

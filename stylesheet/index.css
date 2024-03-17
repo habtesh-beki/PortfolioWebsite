@@ -4,6 +4,14 @@
     --primary-color:#fff;
     --secondary-color:#01a550;
     --color-black:black;
+    --color-Sign : #dfe4e7;
+    --testimonial-color : #666;
+}
+.darkmode {
+    --main-color : #232a36;
+    --primary-color : #000205;
+    --secondary-color : #01a550;
+    --color-black : #fff;
 }
 *{
     margin: 0px;
@@ -13,6 +21,7 @@
 }
 body{
     background-color: var(--main-color);
+    transition: 1s;
 }
 html{
     font-size: 62.5%;
@@ -26,7 +35,7 @@ html{
 }
 .sticky{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--primary-color);
     margin: 0;
     padding: 1rem 2rem;
     width: 100%;

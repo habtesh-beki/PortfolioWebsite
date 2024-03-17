@@ -1,7 +1,7 @@
 .footer__website{
     width: 100%;
     height: 25rem;
-    
+    color: var(--color-black);
 }
 .all__footer--contenet{
     /* */
