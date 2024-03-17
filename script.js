@@ -87,7 +87,6 @@ const Observer = new IntersectionObserver(stickyNav , {
     threshold:0,
     rootMargin:` -${navheight}px`
 })
-
 Observer.observe(headerContainer)
 
 ////////translateY
@@ -105,10 +104,10 @@ const observer = new IntersectionObserver(translateContenet , {
     root:null , 
     threshold:0.5,
 })
+
 translateAbove.forEach(cont => {
   observer.observe(cont)
   cont.classList.add('transitionY')
 })
 
 //////transition of the trusted client atricls
-
